@@ -650,7 +650,9 @@ a {
 /* Navigation Bar */
 .nav {
   background: #000;
+  height: 71px;
   display: flex;
+
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 1rem;
@@ -687,9 +689,9 @@ a {
   box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
 }
-
-.nav__brand {
-  transform: translateY(5px);
+.nav__logo{
+  width: 150px;
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
