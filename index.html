@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cloudy</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -28,15 +29,15 @@
       </nav>
     </header>
     <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__tagline">
+      <div  class="container grid grid--1x2">
+        <header  class="block__header hero__content">
+          <h1 data-aos="fade-right" class="block__heading">Cloud Hosting for Pros</h1>
+          <p data-aos="fade-right" data-aos-duration="1000" class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
           <a href="" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos='fade-left'>
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -50,13 +51,13 @@
       </div>
     </section>
     <section class="block container block-domain">
-      <header class="block__header">
+      <header data-aos="fade-up"  class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
           Type your domain name below to see if it's available.
         </p>
       </header>
-      <div class="input-group">
+      <div data-aos="fade-up"  data-aos-duration="18000" class="input-group">
         <input
           type="text"
           class="input"
@@ -68,7 +69,7 @@
             </svg>Search
         </button>
       </div>
-      <ul class="list block-domain__prices">
+      <ul data-aos="fade-up" data-aos-duration="24000" class="list block-domain__prices">
         <li><span class="badge badge--secondary">.com $9</span></li>
         <li>.sg $10</li>
         <li>.space $11</li>
@@ -79,7 +80,7 @@
     </section>
     <section class="block container block-plans">
       <div class="grid grid--1x3">
-        <div class="plan">
+        <div data-aos="fade-up"  data-aos-duration="12000" class="plan">
           <div class="card card--secondary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -99,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="plan plan--popular">
+        <div data-aos="fade-up" class="plan plan--popular">
           <div class="card card--primary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -119,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="plan">
+        <div data-aos="fade-up" class="plan">
           <div class="card card--secondary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -142,7 +143,7 @@
       </div>
     </section>
     <section class="block container">
-      <header class="block__header">
+      <header data-aos="fade-up"  class="block__header">
         <h2>Host on the Cloud to Keep Growing</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
@@ -150,7 +151,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div data-aos="fade-right" class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -163,7 +164,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -175,8 +176,8 @@
           <img class="feature__image" src="images/easy@2x.jpg" alt="" />
         </picture>
       </article>
-      <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+      <article  class="grid grid--1x2 feature">
+        <div data-aos="fade-right"  class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -189,7 +190,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left" >
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -202,7 +203,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div data-aos="fade-right"  class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -215,7 +216,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
@@ -228,7 +229,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div data-aos="fade-right" class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -241,7 +242,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left" >
           <source
             type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
@@ -259,7 +260,7 @@
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture data-aos="fade-right"  class="block-showcase__image">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -271,16 +272,16 @@
           <img src="images/ipad.png" alt="" />
         </picture>
         <ul class="list">
-          <li>
+          <li  >
             <div class="media">
-              <div class="media__image">
+              <div  data-aos="fade-left" class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#snap"></use>
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                <p>
+                <h3 data-aos="fade-left"  class="media__title">Easy Start & Managed Updates</h3>
+                <p  data-aos="fade-left" data-aos-duration="1000" >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam quisquam, ex nostrum vero voluptates dicta excepturi
                   vel perspiciatis consequuntur ab.
@@ -290,14 +291,14 @@
           </li>
           <li>
             <div class="media">
-              <div class="media__image">
+              <div data-aos="fade-left" class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#growth"></use>
                 </svg>
               </div>
-              <div class="media__body">
-                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
-                <p>
+              <div  class="media__body">
+                <h3 data-aos="fade-left" class="media__title">Staging, GIT & WP-CLI</h3>
+                <p data-aos="fade-left" data-aos-duration="1000">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam quisquam, ex nostrum vero voluptates dicta excepturi
                   vel perspiciatis consequuntur ab.
@@ -307,14 +308,14 @@
           </li>
           <li>
             <div class="media">
-              <div class="media__image">
+              <div data-aos="fade-left" class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#wordpress"></use>
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
-                <p>
+                <h3 data-aos="fade-left" class="media__title">Dynamic Caching & More</h3>
+                <p data-aos="fade-left" data-aos-duration="1000" >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam quisquam, ex nostrum vero voluptates dicta excepturi
                   vel perspiciatis consequuntur ab.
@@ -335,7 +336,7 @@
       <div class="container">
         <div class="card testimonial">
           <div class="grid grid--1x2">
-            <div class="testimonial__image">
+            <div data-aos="zoom-in" class="testimonial__image">
               <img
                 src="images/testimonial.jpg"
                 alt="A happy, smiling customer"
@@ -353,7 +354,7 @@
             It's simply the best and don't think I will be shifting anytime soon.
               </p>
               <footer>
-                <div class="media">
+                <div data-aos="fade-left" class="media">
                   <div class="media__image">
                     <svg class="icon icon--primary quote__line">
                       <use xlink:href="images/sprite.svg#line"></use>
@@ -449,12 +450,16 @@
           </div>
         </section>
         <section class="footer__brand">
-          <img src="images/logo.svg" alt="" />
+          <img class="footer__logo" src="images/logo.svg" alt="" />
           <p class="footer__copyright">Copyright 2020 Qode Mike</p>
         </section>
       </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -699,8 +699,9 @@ a {
   border-radius: 5px;
 }
 .nav__logo {
-  width: 150px;
-  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -850,6 +851,9 @@ a {
   margin-top: 5rem;
   text-align: center;
 }
+.footer__logo{
+  width: 50px;
+}
 
 .footer__brand img {
   max-width: 230px;
@@ -879,11 +883,11 @@ a {
   }
 
   .footer__brand {
-    width: 150px;
+    max-width: 200px;
     order: -1;
-    margin-top: 1rem;
+    align-self: start;
   }
-
+  
   .footer__copyright {
     font-size: 1.5rem;
   }
