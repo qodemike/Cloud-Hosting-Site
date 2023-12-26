@@ -13,7 +13,6 @@
     <meta property="og:image" content="http://" />
     <meta property="og:url" content="https://" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -24,9 +23,12 @@
   <body>
     <header >
       <nav class="nav collapsible ">
-        <a class="nav__brand" href="/"
-          ><img class="nav__logo" src="images/logo.svg" alt=""
-        /></a>
+        <a class="nav__brand" href="#"
+          >
+          <svg class="nav__logo">
+            <use xlink:href="images/sprite.svg#Logo" />
+          </svg>
+        </a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
@@ -51,7 +53,7 @@
           >
             Deploy your websites in less than 60 seconds.
           </p>
-          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+          <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
         <picture data-aos="fade-left">
           <source
@@ -474,9 +476,5 @@
     </footer>
 
     <script src="js/index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

@@ -1048,6 +1048,7 @@ a {
 .nav__logo {
   width: 40px;
   height: 40px;
+  fill: white;
   margin: 1.4rem 0 0 30px ;
 }
 
@@ -1207,7 +1208,8 @@ a {
 }
 
 .footer__copyright {
-  font-size: 2.1rem;
+  margin-top: 1.4rem ;
+  font-size: 1.3rem;
   color: #fff;
   opacity: 0.3;
 }
@@ -1235,9 +1237,6 @@ a {
     align-self: start;
   }
   
-  .footer__copyright {
-    font-size: 1.5rem;
-  }
 
   .footer__section {
     border: 0;
