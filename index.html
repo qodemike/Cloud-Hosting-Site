@@ -3,27 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Deploy your website fast" />
-    <meta property="og:title" content="Cloudy" />
+    <meta name="description" content="Deploy your website fast and affordably with Cloudily. Purchase domain names at a competitive price." />
+    <meta property="og:title" content="Cloudily - Cloud hosting for Pros" />
     <meta
       property="og:description"
-      content="Deploy your website with easy steps. Purchase domain names at a cheap price"
+      content="Cloudily makes website deployment easy and affordable. Purchase domain names at competitive prices and get started with your online presence."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://" />
-    <meta property="og:url" content="https://" />
+    <meta property="og:image" content="https://i.postimg.cc/SN4q8t16/Cloudily-cropped.webp" />
+    <meta property="og:url" content="https://cloudily.netlify.app" />
+    <meta name="keywords" content="website deployment, domain names, affordable hosting, Cloudily, Cloud hosting, cheap hosting, domains, hosting " />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Cloudy</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Cloudily</title>
   </head>
   <body>
     <header >
       <nav class="nav collapsible ">
-        <a class="nav__brand" href="#"
+        <a class="nav__brand" href="/"
           >
           <svg class="nav__logo">
             <use xlink:href="images/sprite.svg#Logo" />
@@ -33,29 +36,27 @@
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#hosting">Hosting</a></li>
           <li class="nav__item"><a href="#">VPS</a></li>
-          <li class="nav__item"><a href="#">Domain</a></li>
-          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a href="#domain">Domain</a></li>
+          <li class="nav__item"><a href="#pricing">Pricing</a></li>
         </ul>
       </nav>
     </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 data-aos="fade-right" class="block__heading">
+        <header class="block__header hero__content slide-right">
+          <h1  class="block__heading">
             Cloud Hosting for Pros
           </h1>
           <p
-            data-aos="fade-right"
-            data-aos-duration="1000"
             class="hero__tagline"
           >
             Deploy your websites in less than 60 seconds.
           </p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture data-aos="fade-left">
+        <picture  class="breath" >
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -68,12 +69,12 @@
         </picture>
       </div>
     </section>
-    <section class="block container block-domain">
-      <header data-aos="fade-up" class="block__header">
+    <section id="domain" data-aos="fade-up" data-aos-duration="1000"  class="block container block-domain">
+      <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>Type your domain name below to see if it's available.</p>
       </header>
-      <div data-aos="fade-up" data-aos-duration="18000" class="input-group">
+      <div class="input-group">
         <input
           type="text"
           class="input"
@@ -86,8 +87,6 @@
         </button>
       </div>
       <ul
-        data-aos="fade-up"
-        data-aos-duration="24000"
         class="list block-domain__prices"
       >
         <li><span class="badge badge--secondary">.com $9</span></li>
@@ -98,9 +97,9 @@
         <li>.xyz $10</li>
       </ul>
     </section>
-    <section class="block container block-plans">
+    <section id="pricing" class="block container block-plans">
       <div class="grid grid--1x3">
-        <div data-aos="fade-up" data-aos-duration="12000" class="plan">
+        <div  data-aos="fade-up" data-aos-duration="1000" class="plan">
           <div class="card card--secondary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -120,7 +119,7 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" class="plan plan--popular">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="plan plan--popular">
           <div class="card card--primary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -140,7 +139,7 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" class="plan">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="plan">
           <div class="card card--secondary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -162,12 +161,12 @@
         </div>
       </div>
     </section>
-    <section class="block container">
-      <header data-aos="fade-up" class="block__header">
+    <section  id="hosting" class="block container">
+      <header class="block__header">
         <h2>Host on the Cloud to Keep Growing</h2>
       </header>
       <article class="grid grid--1x2 feature">
-        <div data-aos="fade-right" class="feature__content">
+        <div data-aos="slide-right" data-aos-duration="1000" class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -180,7 +179,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture data-aos="fade-left">
+        <picture data-aos="fade-up" data-aos-duration="2000" >
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -193,7 +192,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div data-aos="fade-right" class="feature__content">
+        <div  data-aos="slide-left" data-aos-duration="1000" class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -206,7 +205,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture data-aos="fade-left">
+        <picture data-aos="fade-up" data-aos-duration="2000" >
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -219,7 +218,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div data-aos="fade-right" class="feature__content">
+        <div data-aos="slide-right" data-aos-duration="1000" class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -232,7 +231,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture data-aos="fade-left">
+        <picture  data-aos="fade-up" data-aos-duration="2000">
           <source
             type="image/webp"
             srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
@@ -245,7 +244,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div data-aos="fade-right" class="feature__content">
+        <div data-aos="slide-left" data-aos-duration="1000" class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -258,7 +257,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture data-aos="fade-left">
+        <picture data-aos="fade-up" data-aos-duration="2000" >
           <source
             type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
@@ -271,12 +270,12 @@
         </picture>
       </article>
     </section>
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block block--dark block--skewed-right block-showcase ">
       <header class="block__header">
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture data-aos="fade-right" class="block-showcase__image">
+        <picture data-aos="fade-right" data-aos-duration="1000" class="block-showcase__image">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -289,17 +288,17 @@
         </picture>
         <ul class="list">
           <li>
-            <div class="media">
-              <div data-aos="fade-left" class="media__image">
+            <div data-aos="fade-left" data-aos-duration="1000" class="media ">
+              <div  class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#snap"></use>
                 </svg>
               </div>
-              <div class="media__body">
-                <h3 data-aos="fade-left" class="media__title">
+              <div class="media__body ">
+                <h3  class="media__title">
                   Easy Start & Managed Updates
                 </h3>
-                <p data-aos="fade-left" data-aos-duration="1000">
+                <p >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam quisquam, ex nostrum vero voluptates dicta excepturi
                   vel perspiciatis consequuntur ab.
@@ -308,17 +307,17 @@
             </div>
           </li>
           <li>
-            <div class="media">
-              <div data-aos="fade-left" class="media__image">
+            <div data-aos="fade-left" data-aos-duration="1000"  class="media">
+              <div  class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#growth"></use>
                 </svg>
               </div>
               <div class="media__body">
-                <h3 data-aos="fade-left" class="media__title">
+                <h3  class="media__title">
                   Staging, GIT & WP-CLI
                 </h3>
-                <p data-aos="fade-left" data-aos-duration="1000">
+                <p >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam quisquam, ex nostrum vero voluptates dicta excepturi
                   vel perspiciatis consequuntur ab.
@@ -327,17 +326,17 @@
             </div>
           </li>
           <li>
-            <div class="media">
-              <div data-aos="fade-left" class="media__image">
+            <div data-aos="fade-left" data-aos-duration="1000"  class="media">
+              <div  class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="images/sprite.svg#wordpress"></use>
                 </svg>
               </div>
               <div class="media__body">
-                <h3 data-aos="fade-left" class="media__title">
+                <h3  class="media__title">
                   Dynamic Caching & More
                 </h3>
-                <p data-aos="fade-left" data-aos-duration="1000">
+                <p >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam quisquam, ex nostrum vero voluptates dicta excepturi
                   vel perspiciatis consequuntur ab.
@@ -351,12 +350,11 @@
     <section class="block">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
-        <p>What customers are saying about our services.</p>
       </header>
       <div class="container">
         <div class="card testimonial">
           <div class="grid grid--1x2">
-            <div data-aos="zoom-in" class="testimonial__image">
+            <div class="testimonial__image">
               <img
                 src="images/testimonial.jpg"
                 alt="A happy, smiling customer"
@@ -367,20 +365,20 @@
                 </svg>
               </span>
             </div>
-            <blockquote class="quote">
+            <blockquote data-aos="fade-left" data-aos-duration="1000"  class="quote">
               <p class="quote__text">
                 After long frustrating search for the most convinient hosting
                 provider, I was thrilled when I stumbled upon Cloudy, It's
                 simply the best and don't think I will be shifting anytime soon.
               </p>
               <footer>
-                <div data-aos="fade-left" class="media">
+                <div  class="media">
                   <div class="media__image">
                     <svg class="icon icon--primary quote__line">
                       <use xlink:href="images/sprite.svg#line"></use>
                     </svg>
                   </div>
-                  <div class="media__body">
+                  <div data-aos="fade-left" data-aos-duration="1000"  class="media__body">
                     <h3 class="media__title quote__author">John Smith</h3>
                     <p class="quote__organization">ABC Company</p>
                   </div>
@@ -470,11 +468,17 @@
         </section>
         <section class="footer__brand">
           <img class="footer__logo" src="images/logo.svg" alt="" />
-          <p class="footer__copyright">Copyright 2020 Qode Mike</p>
+          <p class="footer__copyright">Copyright 2020 QodeMike</p>
         </section>
       </div>
     </footer>
 
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once:true
+      });
+    </script>
   </body>
 </html>
