@@ -1075,7 +1075,10 @@ a {
   letter-spacing: 1px;
   margin: 2rem 0 5rem;
 }
-
+.hero__image {
+  position: relative;
+  top: -30px;
+}
 @media screen and (min-width: 768px) {
   .hero__content {
     text-align: left;
